@@ -1,0 +1,46 @@
+/* ## Typography
+### Body Copy
+- Font size: 15px
+
+### Font
+- Family: [League Spartan](https://fonts.google.com/specimen/League+Spartan)
+- Weights: 400, 500, 700
+ */
+
+:root {
+    --Magenta: hsl(300, 43%, 22%);
+    --SoftPink: hsl(333, 80%, 67%);
+    --DarkGray: hsl(303, 10%, 53%);
+    --LightGray: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+/* body {
+    
+} */
+
+/* .top-content {} */
+
+/* .hero {} */
+
+h1 {
+    color: var(--Magenta);
+}
+
+/* .ratings-stack {} */
+
+/* .bottom-content {} */
+
+/* .testimonial {} */
+
+/* .buyer {} */
