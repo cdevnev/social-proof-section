@@ -33,14 +33,8 @@ html {
 }
 
 body {
-    /* height: 100%; */
-    /* background-size: 100vmax; */
     background: url('../images/bg-pattern-top-mobile.svg') top 0 left 0/45vmax no-repeat,
-                url('../images/bg-pattern-bottom-mobile.svg')  top 75vh left 0/100vmax no-repeat var(--LightGray);
-    /* background-repeat: no-repeat; */
-    /* background-color: var(--LightGray); */
-    /* background-image: url('../images/bg-pattern-bottom-mobile.svg'); */
-    /* background-position: top 75vh left 0; */
+                url('../images/bg-pattern-bottom-mobile.svg')  top 75vh left 0/100vmax no-repeat var(--White);
     margin-top: 10vh;
     margin-bottom: 10vh;
     display: flex;
@@ -53,8 +47,6 @@ body {
 .wrapper {
     min-width: 19em;
     max-width: 19em;
-
-    /* This section is unneeded but can be used for responsive */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -69,8 +61,6 @@ body {
     flex-direction: column;
     gap: 1em;
 }
-
-/* .hero {} */
 
 h1 {
     font: var(--700);
@@ -99,7 +89,6 @@ h1 {
     padding: .8em;
 }
 
- /* This needs to be used to be used in a @media */
 .bottom-content {
     display: flex;
     flex-flow: column nowrap;
@@ -113,7 +102,7 @@ h1 {
     padding-left: 1.5em;
     padding-right: 1.5em;
     padding-bottom: 2em;
-    color: var(--White);
+    color: var(--LightGray);
     display: flex;
     flex-flow: column nowrap;
     gap: 1.6em;
@@ -136,4 +125,25 @@ h1 {
 .verified {
     font: var(--400);
     color: var(--SoftPink);
+}
+
+@media only screen and (min-width: 900px) {
+    body {
+        background: url('../images/bg-pattern-top-desktop.svg') top 0 left 0/45vmax no-repeat,
+        url('../images/bg-pattern-bottom-desktop.svg')  bottom -3vh right 0/75vmax no-repeat var(--White);
+    }
+    .wrapper {
+        min-width: 80vw;
+    }
+    .top-content, .bottom-content {
+        flex-direction: row;
+    }
+    .top-content, .hero {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .top-content, .hero, .rating {
+        text-align: left;
+    }
+    /* h1 {} */
 }
